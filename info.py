@@ -31,15 +31,15 @@ FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split()
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8267173932').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002546266253').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002297558710'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002588525583'))  
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-100'))  
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100')) 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002546266253'))  
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002700076211')) 
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-100') 
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002588525583') 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-100') 
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002394665397') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Demo23:Demo23@cluster0.fjar36c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -60,8 +60,8 @@ AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-100") # add multiple channels here,
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003666697421')
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002326083514'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002326083514'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/TeamRolex_1")
