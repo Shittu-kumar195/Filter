@@ -51,12 +51,12 @@ MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), True) # Type Tru
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://sandeep:fpA5BAT3VqCq0THj@cluster0.bege5a8.mongodb.net/destinymusic?retryWrites=true&w=majority&appName=Cluster0")
 DB_CHANGE_LIMIT = int(environ.get('DB_CHANGE_LIMIT', "432")) 
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieKaKeeda_SupportGroup')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieKaKeeda')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Justiitian_Official')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/JustiiTian_Owner')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/PW_NDA_1_SHAURYA_2026')
 
-AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-100") # add multiple channels here, separated by single space
+AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1003666697421") # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003666697421')
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
